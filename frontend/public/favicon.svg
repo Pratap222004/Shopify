@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#95BF47;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5E8E3E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)"/>
+  <!-- Shopping bag icon -->
+  <path d="M 30 25 L 30 35 L 25 35 L 25 75 L 75 75 L 75 35 L 70 35 L 70 25 Z" 
+        fill="white" 
+        stroke="white" 
+        stroke-width="2" 
+        stroke-linejoin="round"/>
+  <path d="M 30 25 L 30 20 Q 30 15 35 15 L 65 15 Q 70 15 70 20 L 70 25" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="2" 
+        stroke-linecap="round"/>
+  <!-- Chart/analytics lines -->
+  <path d="M 40 50 L 45 45 L 50 55 L 55 50 L 60 60" 
+        fill="none" 
+        stroke="#5E8E3E" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+  <circle cx="40" cy="50" r="2" fill="#5E8E3E"/>
+  <circle cx="45" cy="45" r="2" fill="#5E8E3E"/>
+  <circle cx="50" cy="55" r="2" fill="#5E8E3E"/>
+  <circle cx="55" cy="50" r="2" fill="#5E8E3E"/>
+  <circle cx="60" cy="60" r="2" fill="#5E8E3E"/>
+</svg>
