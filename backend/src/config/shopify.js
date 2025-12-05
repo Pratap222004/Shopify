@@ -1,0 +1,10 @@
+module.exports = {
+  SHOPIFY_API_KEY: process.env.SHOPIFY_API_KEY || '',
+  SHOPIFY_API_SECRET: process.env.SHOPIFY_API_SECRET || '',
+  SHOPIFY_WEBHOOK_SECRET: process.env.SHOPIFY_WEBHOOK_SECRET || '',
+  SHOPIFY_SCOPES: process.env.SHOPIFY_SCOPES || '',
+  SHOPIFY_API_VERSION: process.env.SHOPIFY_API_VERSION || '2023-10',
+  SHOPIFY_STORE_DOMAIN: process.env.SHOPIFY_STORE_DOMAIN || '',
+};
+
+
