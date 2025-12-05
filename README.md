@@ -46,11 +46,24 @@ This project is a full-stack solution that enables Shopify store owners to conne
 
 > Replace example paths with your actual image files under `/screenshots`
 
-![Login](./screenshots/login.png)
-![Dashboard](./screenshots/dashboard.png)
-![Settings](./screenshots/settings.png)
+![Login](<img width="1469" height="833" alt="Screenshot 2025-12-05 at 11 10 10 PM" src="https://github.com/user-attachments/assets/a6fb50bd-ee72-49b2-a467-c7de660265aa" />
+g)
+![Dashboard](<img width="1462" height="832" alt="Screenshot 2025-12-05 at 11 10 30 PM" src="https://github.com/user-attachments/assets/a5dc0270-c818-433d-a38f-12bd1e2f21eb" />
+)
+![Settings](<img width="1469" height="834" alt="Screenshot 2025-12-05 at 11 10 39 PM" src="https://github.com/user-attachments/assets/35758026-192c-47d4-b7cb-bd8328530187" />
+)
 
 ---
+
+
+##  Deployment
+
+You can access the deployed version of the application here:  
+🔗 Live App: **[https://your-deployed-frontend-url.com](https://your-deployed-frontend-url.com)**  
+🔗 API Service: **[https://your-deployed-backend-url.com](https://your-deployed-backend-url.com)**  
+
+---
+
 
 ##  Multi-Tenant Design
 
