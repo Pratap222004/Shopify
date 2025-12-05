@@ -1,68 +1,74 @@
-Shopify Data Ingestion & Insights Platform
+#  Shopify Data Ingestion & Insights Platform
 
 This project is a full-stack solution that enables Shopify store owners to connect their stores, ingest business data, and view meaningful insights in a single dashboard. It supports multiple tenants, secure authentication, and automated + real-time data sync from Shopify.
 
-Built as part of the Xeno FDE Internship Assignment.
+---
 
- Key Capabilities
+##  Key Capabilities
 
-Email-based authentication (JWT-secured)
+- Email-based authentication (JWT-secured)
+- Multi-tenant data isolation (each store has separate data)
+- Ingestion of Customers, Orders, Products from Shopify Admin APIs
+- Webhooks & Scheduler ensure data stays fresh automatically
 
-Multi-tenant data isolation (each store has separate data)
+### Dashboard Shows:
 
-Ingestion of Customers, Orders, Products from Shopify Admin APIs
+- Total Customers, Total Orders, Total Revenue
+- Average Order Value
+- Repeat Customer Rate
+- Orders & Revenue trends (with date filter)
+- Top customers by spend
+- Redis caching for fast analytics
 
-Webhooks & Scheduler ensure data stays fresh automatically
+---
 
-Dashboard shows:
+##  Tech Stack
 
-Total Customers, Total Orders, Total Revenue
+**Frontend:** React (Vite), Axios, Recharts  
+**Backend:** Node.js (Express), Prisma ORM  
+**Database:** MySQL  
+**Caching:** Redis  
+**Sync:** Shopify Webhooks + Cron-job  
 
-Average Order Value
+---
 
-Repeat Customer Rate
+## 🔄 Data Sync Flow
 
-Orders & Revenue trends (with date filter)
+1️⃣ Tenant connects Shopify store in **Settings**  
+2️⃣ Backend fetches Shopify data (Orders / Customers / Products)  
+3️⃣ Data stored with `tenantId` → Ensures strict isolation  
+4️⃣ Insights generated & cached → Dashboard loads fast  
+5️⃣ Webhooks + scheduler keep everything continuously updated  
 
-Top customers by spend
+---
 
-Redis caching for fast analytics
+##  Screenshots
 
-Tech Stack
+> Replace example paths with your actual image files under `/screenshots`
 
-Frontend: React (Vite), Axios, Recharts
-Backend: Node.js (Express), Prisma ORM
-Database: MySQL
-Caching: Redis
-Sync: Shopify Webhooks + Cron-job
-
-Data Sync Flow
-
-1️⃣ Tenant connects Shopify store in Settings
-2️⃣ Backend fetches Shopify data (orders/customers/products)
-3️⃣ Data stored with tenantId → Ensures strict isolation
-4️⃣ Insights generated & cached → Dashboard loads fast
-5️⃣ Webhooks + scheduler keep everything continuously updated
-
-Screenshots (Replace with your paths)
 ![Login](./screenshots/login.png)
 ![Dashboard](./screenshots/dashboard.png)
 ![Settings](./screenshots/settings.png)
 
-Multi-Tenant Design
+---
 
-Every database entry references a tenantId, ensuring each retailer only sees their own store’s data — crucial for scalable SaaS.
+##  Multi-Tenant Design
 
-Future Enhancements
+Every database entry references a `tenantId`, ensuring data privacy and secure isolation — crucial for scalable SaaS platforms.
 
-More webhook events (fulfillment, checkout started)
+---
 
-Messaging system (RabbitMQ / Kafka) for heavy-scale ingestion
+##  Future Enhancements
 
-Advanced analytics & segmentation
+- More webhook events (fulfillment, checkout started)
+- Messaging system (RabbitMQ / Kafka) for high-volume ingestion
+- Advanced analytics & segmentation capabilities
+- Deployment auto-scaling and monitoring tools
 
-Deployment auto-scaling and monitoring
+---
 
-Summary
+##  Summary
 
-This platform demonstrates how Shopify retailers can onboard data efficiently and instantly turn it into actionable insights — aligned with what Xeno builds for large brands.
+This platform demonstrates how Shopify retailers can onboard data efficiently and instantly turn it into actionable business insights — aligned with the value Xeno delivers for enterprise brands.
+
+---
