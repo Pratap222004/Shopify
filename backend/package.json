@@ -6,6 +6,9 @@
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
     "prisma:migrate": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:resolve": "prisma migrate resolve",
+    "db:push": "prisma db push",
     "postinstall": "prisma generate"
   },
   "dependencies": {
