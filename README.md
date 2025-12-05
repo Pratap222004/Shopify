@@ -44,8 +44,6 @@ This project is a full-stack solution that enables Shopify store owners to conne
 
 ##  Screenshots
 
-> Replace example paths with your actual image files under `/screenshots`
-
 ![Login](<img width="1469" height="833" alt="Screenshot 2025-12-05 at 11 10 10 PM" src="https://github.com/user-attachments/assets/a6fb50bd-ee72-49b2-a467-c7de660265aa" />
 g)
 ![Dashboard](<img width="1462" height="832" alt="Screenshot 2025-12-05 at 11 10 30 PM" src="https://github.com/user-attachments/assets/a5dc0270-c818-433d-a38f-12bd1e2f21eb" />g
