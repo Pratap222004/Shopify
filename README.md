@@ -57,7 +57,7 @@ g)
 ##  Deployment
 
 You can access the deployed version of the application here:  
-🔗 Live App: **[https://your-deployed-frontend-url.com](https://your-deployed-frontend-url.com)**  
+🔗 Live App: **[https://your-deployed-frontend-url.com]((https://shopify-theta-sepia.vercel.app/))**  
 🔗 API Service: **[https://your-deployed-backend-url.com](https://your-deployed-backend-url.com)**  
 
 ---
